@@ -1,0 +1,46 @@
+{% extends 'admin/a_base.html' %}
+{% block content %}
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+ <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+       
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Edit Category</h1>
+              
+<form action="{% url 'adminupdatecategory_url' %}" method="POST" enctype="multipart/form-data" class="user">
+  {% csrf_token %}
+  <input type="text" name="catid" placeholder="enter category"  value= "{{ s.cat_id }}" class="form-control">
+  <input type="text" name="catname" placeholder="enter category"  value= "{{ s.cat_name }}" class="form-control">
+  <img src='/media/{{s.cat_img}}' alt="{{s.cat_img}}" width="100px" id="profile-img-tag">
+  <input type="file" name="image" class="form-control" id="profile-img">
+  <script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#profile-img-tag').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#profile-img").change(function(){
+        readURL(this);
+    });
+</script>
+  <br>
+  <input type="submit" name="submit" class="btn btn-facebook btn-user btn-block">
+</form>
+ </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

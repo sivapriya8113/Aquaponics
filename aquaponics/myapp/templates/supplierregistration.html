@@ -1,0 +1,44 @@
+    
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="contact py-5" id="contact">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="w3ls-title text-wh text-center font-weight-bold mb-5">Supplier Registration <span class="font-weight-light"></span></h3>
+			<div class="row contact-form">
+				<div class="offset-lg-2"></div>
+				<div class="col-lg-8 wthree-form-left">
+					<!-- contact form grid -->
+					<fieldset class="contact-top1" data-blast="borderColor">
+						<legend class="text-wh let text-capitalize">Join Us</legend>
+						<form action="#" method="post" class="f-color">
+							{% csrf_token %}
+							<div class="form-group">
+								<label for="contactusername">Name</label>
+								<input type="text" class="form-control" name="name" id="name" required placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<label for="contactemail">Email</label>
+								<input type="email" class="form-control" name="email" id="email" required placeholder="Enter your Email">
+							</div>
+							<div class="form-group">
+								<label for="contactcomment">Address</label>
+								<textarea class="form-control" rows="5" name="address" id="address" required placeholder="your message"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="contactusername">Phone Number</label>
+								<input type="text" class="form-control" name="phone" id="phone" required placeholder="Enter your name">
+							</div>
+							<div class="form-group">
+								<label for="contactusername">Password</label>
+								<input type="text" class="form-control" name="password" id="password" required placeholder="Enter your name">
+							</div>
+							<button type="submit" class="btn btn-block" data-blast="bgColor">Register</button>
+						</form>
+					</fieldset>
+					<!--  //contact form grid ends here -->
+				</div>
+				
+
+{% endblock %}

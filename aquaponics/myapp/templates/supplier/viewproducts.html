@@ -1,0 +1,50 @@
+    
+{% extends 'supplier/s_base.html' %}
+
+{% block content %}
+
+<section class="contact py-5" id="contact">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="w3ls-title text-wh text-center font-weight-bold mb-5">Suppliers Home Page <span class="font-weight-light"></span></h3>
+			<div class="row contact-form">
+				<div class="offset-lg-2"></div>
+				<div class="col-lg-8 wthree-form-left">
+					<!-- contact form grid -->
+					<fieldset class="contact-top1" data-blast="borderColor">
+						<legend class="text-wh let text-capitalize">Join Us</legend>
+						 <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Users List</h1>
+        
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+               <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+            <div class="table-responsive">
+            <table class="table table-bordered" id="myTable" width="100%" cellspacing="0">
+            <thead>
+				<th>Name</th>
+				<th>Image</th>
+			
+			</thead>
+	<tbody>
+	{% for x in s %}
+		<tr>
+		<td>{{x.p_name}}</td>
+		<td><img src='/media/{{x.p_img}}' alt="{{x.p_img}}" width="100px"></td>
+
+		
+		</tr>
+	{% endfor %}
+</tbody>
+</table>
+</div>
+					</fieldset>
+					<!--  //contact form grid ends here -->
+				</div>
+				
+
+{% endblock %}

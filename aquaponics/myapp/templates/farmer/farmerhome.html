@@ -1,0 +1,30 @@
+    
+{% extends 'farmer/f_base.html' %}
+
+{% block content %}
+
+
+<section class="contact py-5" id="contact">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="w3ls-title text-wh text-center font-weight-bold mb-5">Farmers home page <span class="font-weight-light"></span></h3>
+			<div class="row contact-form">
+				<div class="offset-lg-2"></div>
+				<div class="col-lg-8 wthree-form-left">
+					<!-- contact form grid -->
+					<fieldset class="contact-top1" data-blast="borderColor">
+						<legend class="text-wh let text-capitalize">Join Us</legend>
+						<form action="#" method="post" class="f-color">
+							{% csrf_token %}
+							<h1>Farmer Home</h1>
+						</form>
+					</fieldset>
+					<!--  //contact form grid ends here -->
+				</div>
+
+				</div>
+			</div>
+		</div>
+</section>
+				
+
+{% endblock %}

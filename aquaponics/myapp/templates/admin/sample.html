@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="{% url 'adminaddcat_url' %}" method="POST" enctype="multipart/form-data">
+	{% csrf_token %}
+	<input type="text" name="catname" placeholder="enter category">
+	<input type="file" name="image">
+	<input type="submit" name="submit">
+</form>
+{% endblock %}

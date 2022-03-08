@@ -1,0 +1,294 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Plants Agriculture Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Plants Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// <link href="{% static 'help/css/bootstrap.css' %}" rel='stylesheet' type='text/css' /> -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+	<!-- Bootstrap-Core-CSS -->
+	<link href="{% static '/css/css_slider.css' %}"  type="text/css" rel="stylesheet" media="all">
+	<!-- banner slider -->
+	<link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="{% static '/css/font-awesome.min.css' %}" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Niconne&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	 rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+	<div id="home">
+		<!-- header -->
+		<header class="header-style fixed-top">
+			<div class="container">
+				<div class="header d-lg-flex justify-content-between align-items-center">
+					<!-- logo -->
+					<h1 class="logo text-center">
+						<a href="index.html">Aqua<i class="fa fa-pagelines" aria-hidden="true"></i>
+						</a>
+					</h1>
+					<!-- //logo -->
+					<!-- nav -->
+					<div class="nav_w3ls">
+						<nav>
+							<label for="drop" class="toggle toogle-2">Menu</label>
+							<input type="checkbox" id="drop" />
+							<ul class="menu">
+								<li><a href="#services">&nbsp;</a></li>
+								<li class="active ml-0"><a href="{% url 'supplierhome_url' %}">Home</a></li>
+								<li><a href="#services">Comments</a></li>
+							
+								<li>
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toggle-drop">Materials <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">Meterials <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul class="list-unstyled">
+								<li><a href="{% url 'sup_addmaterial_url' %}" class="drop-text">Add Materials</a></li>
+								<li><a href="{% url 'sup_viewproduct_url' %}" class="drop-text">View Materials</a></li>
+								<li><a href="{% url 'farmerregistration_url' %}" class="drop-text">View Orders</li>
+								</ul>
+								
+								</li>
+								
+								<li><a href="#blog">Blog</a></li>
+								
+								<li>
+									<!-- First Tier Drop Down -->
+									<label for="drop-2" class="toggle toggle-drop">My Account <span class="fa fa-angle-down" aria-hidden="true"></span>
+									</label>
+									<a href="#">My Account <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<input type="checkbox" id="drop-2" />
+									<ul class="list-unstyled">
+								<li><a href="{% url 'userregistration_url' %}" class="drop-text">Change Password</a></li>
+								<li><a href="{% url 'supplierregistration_url' %}" class="drop-text">Feedback</a></li>
+								
+								</ul>
+								
+								</li>
+								<li class="mr-0"><a href="{% url 'index_url' %}">Logout</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- //nav -->
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- banner -->
+		<div class="banner_w3lspvt">
+			<div class="csslider infinity" id="slider1">
+				<input type="radio" name="slides" checked="checked" id="slides_1" />
+				<input type="radio" name="slides" id="slides_2" />
+				<input type="radio" name="slides" id="slides_3" />
+				<input type="radio" name="slides" id="slides_4" />
+				<ul>
+					<li>
+						<div class="banner-top">
+							<div class="container">
+								<div class="w3layouts-banner-info text-center">
+									
+	{% block content %}
+	{% endblock %}
+								</div>
+							</div>
+						</div>
+					</li>
+					
+	
+
+	<!-- popup-->
+	<div id="gal1" class="popup-effect animate">
+		<div class="popup">
+			<img src="{% static '/images/g1.jpg' %}" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal2" class="popup-effect animate">
+		<div class="popup">
+			<img src="{% static '/images/g2.jpg' %}" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal3" class="popup-effect animate">
+		<div class="popup">
+			<img src="{% static '/images/g3.jpg' %}" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup3 -->
+	<!-- popup-->
+	<div id="gal4" class="popup-effect animate">
+		<div class="popup">
+			<img src="{% static '/images/g4.jpg' %}" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal5" class="popup-effect animate">
+		<div class="popup">
+			<img src="{% static '/images/g5.jpg'  %}" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal6" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal7" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal8" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/g8.jpg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal9" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/g9.jpg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- //gallery -->
+
+	
+	<!-- footer -->
+	<footer class="text-center py-4">
+		<div class="container py-xl-5 py-4">
+			<h3 class="text-da let mb-3">We Provide Best Services</h3>
+			<p class="footer-para mx-auto">Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+				doloremque laudantium, totam rem aperiam</p>
+			<!-- logo -->
+			<h2 class="logo2 text-center mt-3">
+				<a href="index.html">
+					Plants<i class="fa fa-pagelines" aria-hidden="true"></i>
+				</a>
+			</h2>
+			<!-- //logo -->
+			<!-- address -->
+			<div class="contact-left-footer mt-4">
+				<h6 class="text-da let mb-3">Sed do eiusmod tempor incididunt ut labore et dolore</h6>
+				<ul>
+					<li>
+						<p>
+							<i class="fa fa-map-marker mr-2"></i>345 Setwant natrer, USA
+						</p>
+					</li>
+					<li class="mx-4">
+						<p>
+							<i class="fa fa-phone mr-2"></i>+1(401) 1234 567.
+						</p>
+					</li>
+					<li>
+						<p class="text-wh">
+							<i class="fa fa-envelope-open mr-2"></i>
+							<a href="mailto:info@example.com">example@gmail.com</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<!-- //address -->
+			<!-- social icons -->
+			<div class="footercopy-social mt-4">
+				<ul>
+					<li>
+						<a href="#">
+							<span class="fa fa-facebook-f"></span>
+						</a>
+					</li>
+					<li class="mx-2">
+						<a href="#">
+							<span class="fa fa-twitter"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="fa fa-rss"></span>
+						</a>
+					</li>
+					<li class="ml-2">
+						<a href="#">
+							<span class="fa fa-vk"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- //social icons -->
+			<!-- copyright -->
+			<div class="w3l-copy text-center mt-5">
+				<p class="text-da">© 2018 Plants. All rights reserved | Design by
+					<a href="http://w3layouts.com/">W3layouts</a>
+				</p>
+			</div>
+			<!-- //copyright -->
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<!-- move top icon -->
+	<a href="#home" class="move-top text-center"></a>
+	<!-- //move top icon -->
+
+</body>
+
+</html>

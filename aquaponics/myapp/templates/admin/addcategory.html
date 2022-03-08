@@ -1,0 +1,30 @@
+{% extends 'admin/a_base.html' %}
+{% block content %}
+ <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+       
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Create Category</h1>
+              
+<form action="{% url 'adminaddcat_url' %}" method="POST" enctype="multipart/form-data" class="user">
+  {% csrf_token %}
+  <input type="text" name="catname" placeholder="enter category" class="form-control">
+  <input type="file" name="image" class="form-control">
+  <br>
+  <input type="submit" name="submit" class="btn btn-facebook btn-user btn-block">
+</form>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
